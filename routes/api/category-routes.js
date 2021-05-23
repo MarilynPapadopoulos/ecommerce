@@ -64,6 +64,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
+  console.log("line 67", req.params.id);
   Category.destroy({
     where: {
       id: req.params.id
